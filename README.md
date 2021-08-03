@@ -13,7 +13,7 @@ This project is a semi-functional version of Hapu's homepage, created with [Reac
 
 <!-- toc -->
 
-## How to install the project <a name="installation"/> [^](#instalation)
+## How to install the project <a name="installation"/> [^](#list)
 
 To install the project you must have previously installed [Node.js](https://nodejs.org/en/) and its package manager [NPM](https://nodejs.org/en/) and [clone this repository](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). To ensure the best development experience it is recommended to install Eslint and Prettier plugins in your editor.
 
@@ -21,7 +21,7 @@ After you have done these procedures run the following command in the folder tha
 
 ### `npm install`
 
-## How to run the project <a name="exec"/> [^](#exec)
+## How to run the project <a name="exec"/> [^](#list)
 
 To start the project in development mode on port 3000 ([http://localhost:3000](http://localhost:3000)), go to the project folder `/test-jungle-devs` and run:
 
@@ -35,7 +35,7 @@ To start the integration tests, inside the project folder `/test-jungle-devs` ru
 
 press `q` to quit the test runner.
 
-## How to create a production version <a name="build"/> [^](#build)
+## How to create a production version <a name="build"/> [^](#list)
 
 To create a production version for go to the `/test-jungle-devs` project folder and run:
 
@@ -43,7 +43,7 @@ To create a production version for go to the `/test-jungle-devs` project folder 
 
 This command will create a new `/build` folder, this folder contains all the code minified and transpiled to older versions of javascript to ensure it works in older browsers. Use this folder as content in your deploys.
 
-## A/B Test <a name="a/b"/> [^](#a/b)
+## A/B Test <a name="a/b"/> [^](#list)
 
 This project performs an experiment where 50% of the audience receives a different message in the Hero component,
 the results of the test can be seen [here](https://app.optimizely.com/l/nRjsaTIcRgeWj4ePDxzNLg)
