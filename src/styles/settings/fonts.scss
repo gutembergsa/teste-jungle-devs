@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../../assets/fonts/Inter.woff2') format('woff2'),
+		url('../../assets/fonts/Inter.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--font-size: 1.4rem;
+	--font-size-small: 1.2rem;
+	--font-weight-regular: 400;
+	--font-weight-bold: 500;
+
+	font-family: 'Inter', sans-serif;
+	color: var(--white);
+}

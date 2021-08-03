@@ -1,0 +1,51 @@
+@mixin ButtonStyleLayout($color: var(--soft-green-1)) {
+	width: 234px;
+	height: 44px;
+	border-radius: 4px;
+	color: var(--white);
+	outline: none;
+	border: none;
+	background-color: $color;
+}
+@mixin FlexCenterLayout($justifyContent: center) {
+	display: flex;
+	justify-content: $justifyContent;
+}
+@mixin TextLinkLayout($color: var(--dark-purple-1)) {
+	width: fit-content;
+	border-bottom: 1px solid $color;
+	font-weight: var(--font-weight-bold);
+	color: $color;
+	text-decoration: none;
+}
+@mixin ErrorMessageLayout() {
+	position: absolute;
+	color: var(--regular-red-1);
+}
+@mixin InputContainerLayout() {
+	position: relative;
+}
+@mixin NavbarItemLayout() {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+@mixin TextContentLayout($font-size: 2.4rem) {
+	font-weight: var(--font-weight-bold);
+	font-size: $font-size;
+	color: var(--dark-grey-1);
+}
+@mixin ImageBaseLayout($objectFit: contain) {
+	width: 100%;
+	object-fit: $objectFit;
+	@media (max-width: 1024px) {
+		width: auto;
+	}
+}
+@mixin InputStyleLayout() {
+	display: block;
+	width: 100%;
+	width: 232px;
+	height: 48px;
+}

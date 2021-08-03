@@ -1,0 +1,29 @@
+@import '../../styles/styles.scss';
+
+.input,
+.userArea {
+	@include InputContainerLayout();
+	@include InputStyleLayout();
+}
+.userArea {
+	border: 1px solid var(--soft-grey-1);
+	text-indent: 20px;
+}
+.userArea::placeholder {
+	color: var(--dark-grey-1);
+}
+.error {
+	@include ErrorMessageLayout();
+	font-size: 1.4rem;
+	top: 50px;
+	left: 20px;
+}
+@media (max-width: 1024px) {
+	.input,
+	.userArea {
+		width: 100%;
+	}
+	.input {
+		margin-bottom: 25px;
+	}
+}

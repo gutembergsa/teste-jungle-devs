@@ -1,0 +1,17 @@
+@import '../../styles/styles.scss';
+
+.button {
+	@include ButtonStyleLayout($color: var(--regular-green-1));
+}
+span {
+	position: absolute;
+	bottom: 10px;
+	left: 13px;
+}
+.eye {
+	position: absolute;
+	top: -5px;
+}
+.eyeRight {
+	right: 0;
+}

@@ -1,0 +1,79 @@
+@import '../../styles/styles.scss';
+
+.hero {
+	@include FlexCenterLayout();
+	height: 616px;
+	image-rendering: auto;
+	background: url(../../assets/images/heroBackground.png) no-repeat,
+		linear-gradient(to left top, #c86dd7 -1.5%, #7e49c3 39.43%, #5912ac 86.02%);
+	background-size: cover;
+	.title {
+		font-size: 4rem;
+	}
+	.subTitle {
+		padding-top: 24px;
+		padding-bottom: 40px;
+		font-size: 1.8rem;
+	}
+	.play {
+		display: flex;
+		align-items: center;
+	}
+	.link {
+		@include TextLinkLayout($color: var(--white));
+		margin-left: 12px;
+	}
+}
+
+.heroFlexContainer {
+	@include FlexCenterLayout($justifyContent: space-between);
+	align-items: center;
+	max-width: 1084px;
+	width: 100%;
+}
+
+.heroBlock {
+	&.left {
+		max-width: 584px;
+	}
+	&.right {
+		max-width: 316px;
+	}
+}
+.heroButton {
+	@include ButtonStyleLayout($color: var(--regular-green-1));
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	& svg {
+		position: relative;
+		left: 2px;
+		top: 2px;
+	}
+}
+
+@media (max-width: 990px) {
+	.hero {
+		.play {
+			justify-content: center;
+		}
+	}
+	.heroBlock {
+		&.left {
+			text-align: center;
+		}
+		&.right {
+			display: none;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.hero {
+		.title {
+			font-size: 2.8rem;
+		}
+		.subTitle {
+			font-size: 1.6rem;
+		}
+	}
+}

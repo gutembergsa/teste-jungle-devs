@@ -1,0 +1,47 @@
+@import '../../styles/styles.scss';
+
+header {
+	position: absolute;
+	width: 100%;
+	background-color: transparent;
+}
+.navbar {
+	@include FlexCenterLayout($justifyContent: space-between);
+	margin-top: 16px;
+	margin-left: 140px;
+	margin-right: 32px;
+}
+
+.navbarList {
+	@include NavbarItemLayout();
+}
+
+.link {
+	color: var(--white);
+	text-decoration: none;
+	font-size: 14px;
+}
+.headerSmileButton {
+	@include ButtonStyleLayout();
+	position: absolute;
+	left: 20px;
+	height: 64px;
+	width: 48px;
+	border-radius: 0 0 32px 32px;
+	& svg {
+		position: relative;
+		top: 7px;
+	}
+}
+
+@media (max-width: 990px) {
+	.navbar,
+	.navbarList:nth-of-type(2) {
+		margin-right: 0;
+		margin-left: auto;
+	}
+	.navbarList:nth-of-type(1),
+	.navbarControl :nth-child(2) {
+		display: none;
+	}
+}

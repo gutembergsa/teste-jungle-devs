@@ -1,0 +1,45 @@
+@import '../../styles/styles.scss';
+
+.form {
+	@include FlexCenterLayout();
+	align-items: center;
+	max-width: 584px;
+	gap: 12px;
+	margin: auto;
+	button {
+		height: 48px;
+	}
+}
+.inputContainer {
+	@include InputContainerLayout();
+}
+.error {
+	@include ErrorMessageLayout();
+	font-size: 1.4rem;
+	top: 50px;
+	left: 20px;
+}
+.customPlaceholder {
+	position: absolute;
+	top: 7px;
+	left: 20px;
+}
+@media (max-width: 1024px) {
+	.form {
+		flex-wrap: wrap;
+		& > * {
+			max-width: 100%;
+			flex-grow: 1;
+		}
+	}
+	.error {
+		@include ErrorMessageLayout();
+		font-size: 1.4rem;
+		top: 50px;
+		left: 20px;
+	}
+	.customPlaceholder {
+		position: absolute;
+		top: 7px;
+	}
+}

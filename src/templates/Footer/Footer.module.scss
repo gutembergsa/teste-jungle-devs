@@ -1,0 +1,123 @@
+@import '../../styles/styles.scss';
+
+.footer {
+	background-color: var(--white);
+	min-height: 500px;
+	text-align: center;
+	.title {
+		@include TextContentLayout($font-size: 2.8rem);
+		padding-bottom: 16px;
+	}
+	.subTitle {
+		@include TextContentLayout($font-size: 1.8rem);
+		padding-bottom: 32px;
+	}
+	.link {
+		@include TextLinkLayout();
+	}
+	.linkContainer {
+		padding-top: 24px;
+		padding-bottom: 82px;
+	}
+	.rightsText {
+		padding-top: 82px;
+		color: var(--dark-grey-1);
+		opacity: 60.26%;
+	}
+}
+.footerContent {
+	max-width: 1184px;
+	margin: auto;
+	padding-top: 90px;
+	padding-top: 32px;
+}
+.footerButton {
+	@include ButtonStyleLayout($color: var(--dark-purple-1));
+	width: 304px;
+	height: 68px;
+	border-radius: 4px;
+	color: var(--white);
+	span {
+		@include FlexCenterLayout();
+		position: static;
+		gap: 21px;
+		&:nth-child(1) {
+			font-size: 1.6rem;
+		}
+		&:nth-child(2) {
+			display: block;
+			text-align: start;
+			font-size: 1.2rem;
+		}
+	}
+}
+.footerNav {
+	@include FlexCenterLayout($justifyContent: space-between);
+	align-items: center;
+}
+.interNavBlock {
+	position: relative;
+	left: 75px;
+	.firstLinkGroup {
+		margin-right: 30px;
+	}
+}
+.footerNavList {
+	@include NavbarItemLayout();
+	a {
+		color: var(--dark-grey-1);
+		text-decoration: none;
+	}
+}
+.externalLinkButton {
+	@include ButtonStyleLayout($color: var(--white));
+	width: 45px;
+	height: 45px;
+	border: 1px solid var(--soft-grey-1);
+	border-radius: 50%;
+}
+@media (max-width: 990px) {
+	.footer {
+		.linkContainer {
+			padding-bottom: 48px;
+		}
+		.rightsText {
+			height: 64px;
+			margin-top: 54px;
+			padding-top: 24px;
+			white-space: nowrap;
+			border-top: 1px solid var(--soft-grey-1);
+			font-size: 1.2rem;
+		}
+
+		.title {
+			font-size: 2.2rem;
+		}
+		.subTitle {
+			font-size: 1.6rem;
+		}
+	}
+	.footerNav {
+		flex-direction: column;
+	}
+	.interNavBlock {
+		left: 0;
+		padding-top: 40px;
+		padding-bottom: 27px;
+		.footerNavList {
+			flex-direction: column;
+		}
+		.firstLinkGroup {
+			margin-right: 32px;
+		}
+	}
+	.footerButton {
+		width: 100%;
+		max-width: 304px;
+	}
+}
+@media (max-width: 359px) {
+	.footer .rightsText {
+		white-space: pre-wrap;
+	}
+}

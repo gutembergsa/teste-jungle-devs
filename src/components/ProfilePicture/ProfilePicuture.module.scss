@@ -1,0 +1,10 @@
+.image,
+.imageFallback {
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+}
+.imageFallback {
+	background-color: var(--white);
+	border-radius: 1px solid var(--black);
+}

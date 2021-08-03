@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Test Jungle Devs - Hapu homepage <a name="list"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-   [Sobre este projeto](#about)
+-   [Como instalar o projeto](#instalacao)
+-   [Como executar o projeto](#exec)
+-   [Como criar uma versão de produção](#build)
+-   [Teste A/B](#a/b)
+-   [Melhorias](#melhorias)
 
-## Available Scripts
+## Sobre o projeto <a name="about"/>
 
-In the project directory, you can run:
+Este projeto é uma versão semi-funcional da homepage da Hapu, criado com [React](https://github.com/facebook/create-react-app), [Redux](https://redux-toolkit.js.org/introduction/getting-started) e testado com [Jest](https://jestjs.io/pt-BR/docs/tutorial-react); Para a estilização dos componentes foi utilizado o pre-procesasdor [SASS](https://sass-lang.com/) com [CSS Modules](https://github.com/css-modules/css-modules) e para visualização das notificações foi utilizada a biblioteca [react-toastify](https://www.npmjs.com/package/react-toastify).
+
+<!-- toc -->
+
+## Como instalar o projeto <a name="instalacao"/> [^](#instalacao)
+
+Para instalar o projeto é necessário ter previamente instalado o [Node.js](https://nodejs.org/en/) e o seu gerenciador de pacotes [NPM](https://nodejs.org/en/) e [clonar este repositório](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). Para garantir a melhor experiencia no desenvolvimento é recomendado instalar no seu editor os plugins do Eslint e do Prettier.
+
+Apos ter realizado estes procedimentos execute o comando a seguir na pasta que foi criada pela clonagem do repositorio `/test-jungle-devs` para instalar as dependencias do projeto.
+
+### `npm install`
+
+## Como executar o projeto <a name="exec"/> [^](#exec)
+
+Para iniciar o projeto em modo de desenvolvimento na porta 3000 ([http://localhost:3000](http://localhost:3000)), vá ate a pasta do projeto `/test-jungle-devs` e execute:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+pressione `Ctrl + c` para encerrar a execução do projeto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para iniciar os testes de unidade, na pasta do projeto `/test-jungle-devs` execute:
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+pressione `q` para encerrar o executor de testes.
 
-### `npm run build`
+## Como criar uma versão de produção <a name="build"/> [^](#build)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para criar uma versão de produção para vá ate a pasta do projeto `/test-jungle-devs` e execute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este comando vai criar um nova pasta `/build`, esta pasta contem todo o codigo minificado e transpilado para versões mais antigas do javascript como forma de garantir o funcionamento em navegadores mais antigos. Use esta pasta como conteudo nos seus deploys.
 
-### `npm run eject`
+## Teste A/B <a name="a/b"/> [^](#a/b)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Este projeto realiza um experimento onde 50% do publico recebe uma mensagem diferente no componente Hero,
+os resultados do teste podem vistos [aqui](https://app.optimizely.com/l/nRjsaTIcRgeWj4ePDxzNLg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+    <p> variant 1:</p>
+    <img src="./src/assets/readme/heroVariant1.png" width="600" height="300" alt="todo-list-usage"/>
+</p>
+<p align="center">
+    <p> variant 2:</p>
+    <img src="./src/assets/readme/heroVariant2.png" width="600" height="300" alt="todo-list-usage"/>
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Melhorias <a name="melhorias"/> [^](#list)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   implementação de testes de integração nas funções criticas ao usuario
+    -   Renderização correta da tela
+    -   funcionamento do formualrio
+-   Foi adicionada a biblioteca toastify para melhorar o feedback das API's.

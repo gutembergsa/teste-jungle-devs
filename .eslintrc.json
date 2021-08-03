@@ -1,0 +1,35 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["plugin:react/recommended"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"rules": {
+		"semi": ["error", "never"],
+		"indent": ["off"],
+		"no-tabs": [
+			"error",
+			{
+				"allowIndentationTabs": true
+			}
+		],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+		"react/jsx-one-expression-per-line": ["off"],
+		"react/require-default-props": ["off"],
+		"react/jsx-props-no-spreading": ["off"],
+		"linebreak-style": ["off"],
+		"import/prefer-default-export": ["off"],
+		"jsx-a11y/label-has-associated-control": ["off"],
+		"import/no-named-as-default": ["off"],
+		"operator-linebreak": ["off"]
+	}
+}
