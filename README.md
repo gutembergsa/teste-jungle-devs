@@ -9,13 +9,13 @@
 
 ## About the project <a name="about"/>
 
-This project is a semi-functional version of Hapu's homepage, created with [React](https://github.com/facebook/create-react-app), [Redux](https://redux-toolkit.js.org/introduction/getting-started) and tested with [Jest](https://jestjs.io/pt-BR/docs/tutorial-react); For styling the components the pre-processor [SASS](https://sass-lang.com/) with [CSS Modules](https://github.com/css-modules/css-modules) was used and for displaying notifications the [react-toastify](https://www.npmjs.com/package/react-toastify) library was used.
+This project is a semi-functional version of Hapu's homepage, created with [React](https://github.com/facebook/create-react-app), [Redux](https://redux-toolkit.js.org/introduction/getting-started) and tested with [Jest](https://jestjs.io/pt-BR/docs/tutorial-react). For styling the components the pre-processor [SASS](https://sass-lang.com/) with [CSS Modules](https://github.com/css-modules/css-modules) was used and for displaying notifications the [react-toastify](https://www.npmjs.com/package/react-toastify) library was used.
 
 <!-- toc -->
 
 ## How to install the project <a name="instalation"/> [^](#instalation)
 
-To install the project you must have previously installed [Node.js](https://nodejs.org/en/) and its package manager [NPM](https://nodejs.org/en/) and [clone this repository](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). To ensure the best development experience it is recommended to install the Eslint and Prettier plugins in your editor.
+To install the project you must have previously installed [Node.js](https://nodejs.org/en/) and its package manager [NPM](https://nodejs.org/en/) and [clone this repository](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). To ensure the best development experience it is recommended to install Eslint and Prettier plugins in your editor.
 
 After you have done these procedures run the following command in the folder that was created by cloning the `/test-jungle-devs` repository to install the project dependencies.
 
@@ -29,7 +29,7 @@ To start the project in development mode on port 3000 ([http://localhost:3000](h
 
 press `Ctrl + c` to quit the project.
 
-To start the unit tests, in the project folder `/test-jungle-devs` run:
+To start the integration tests, inside the project folder `/test-jungle-devs` run:
 
 ### `npm test`
 
@@ -41,7 +41,7 @@ To create a production version for go to the `/test-jungle-devs` project folder 
 
 ### `npm build`
 
-This command will create a new `/build` folder, this folder contains all the code minified and transposed to older versions of javascript to ensure it works in older browsers. Use this folder as content in your deploys.
+This command will create a new `/build` folder, this folder contains all the code minified and transpiled to older versions of javascript to ensure it works in older browsers. Use this folder as content in your deploys.
 
 ## A/B Test <a name="a/b"/> [^](#a/b)
 
@@ -61,7 +61,5 @@ the results of the test can be seen [here](https://app.optimizely.com/l/nRjsaTIc
 
 -   Implementation of integration tests on user-critical functions
     -   Correct screen rendering
-    -   formualrio working
+    -   Form working as expected
 -   Added toastify library to improve API feedback.
-
-Translated with www.DeepL.com/Translator (free version)
