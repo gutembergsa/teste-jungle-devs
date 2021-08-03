@@ -13,7 +13,7 @@ This project is a semi-functional version of Hapu's homepage, created with [Reac
 
 <!-- toc -->
 
-## How to install the project <a name="instalation"/> [^](#instalation)
+## How to install the project <a name="installation"/> [^](#instalation)
 
 To install the project you must have previously installed [Node.js](https://nodejs.org/en/) and its package manager [NPM](https://nodejs.org/en/) and [clone this repository](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). To ensure the best development experience it is recommended to install Eslint and Prettier plugins in your editor.
 
@@ -57,7 +57,7 @@ the results of the test can be seen [here](https://app.optimizely.com/l/nRjsaTIc
     <img src="./src/assets/readme/heroVariant2.png" width="600" height="300" alt="todo-list-usage"/>
 </p>
 
-## Enhancements <a name="enhancements"/> [^](#list)
+## Enhancements <a name="improvements"/> [^](#list)
 
 -   Implementation of integration tests on user-critical functions
     -   Correct screen rendering
