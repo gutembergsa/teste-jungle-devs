@@ -1,65 +1,67 @@
 # Test Jungle Devs - Hapu homepage <a name="list"/>
 
--   [Sobre este projeto](#about)
--   [Como instalar o projeto](#instalacao)
--   [Como executar o projeto](#exec)
--   [Como criar uma versão de produção](#build)
--   [Teste A/B](#a/b)
--   [Melhorias](#melhorias)
+-   [About this project](#about)
+-   [How to install the project](#installation)
+-   [How to run the project](#exec)
+-   [How to create a production version](#build)
+-   [A/B testing](#a/b)
+-   [Improvements](#improvements)
 
-## Sobre o projeto <a name="about"/>
+## About the project <a name="about"/>
 
-Este projeto é uma versão semi-funcional da homepage da Hapu, criado com [React](https://github.com/facebook/create-react-app), [Redux](https://redux-toolkit.js.org/introduction/getting-started) e testado com [Jest](https://jestjs.io/pt-BR/docs/tutorial-react); Para a estilização dos componentes foi utilizado o pre-procesasdor [SASS](https://sass-lang.com/) com [CSS Modules](https://github.com/css-modules/css-modules) e para visualização das notificações foi utilizada a biblioteca [react-toastify](https://www.npmjs.com/package/react-toastify).
+This project is a semi-functional version of Hapu's homepage, created with [React](https://github.com/facebook/create-react-app), [Redux](https://redux-toolkit.js.org/introduction/getting-started) and tested with [Jest](https://jestjs.io/pt-BR/docs/tutorial-react); For styling the components the pre-processor [SASS](https://sass-lang.com/) with [CSS Modules](https://github.com/css-modules/css-modules) was used and for displaying notifications the [react-toastify](https://www.npmjs.com/package/react-toastify) library was used.
 
 <!-- toc -->
 
-## Como instalar o projeto <a name="instalacao"/> [^](#instalacao)
+## How to install the project <a name="instalation"/> [^](#instalation)
 
-Para instalar o projeto é necessário ter previamente instalado o [Node.js](https://nodejs.org/en/) e o seu gerenciador de pacotes [NPM](https://nodejs.org/en/) e [clonar este repositório](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). Para garantir a melhor experiencia no desenvolvimento é recomendado instalar no seu editor os plugins do Eslint e do Prettier.
+To install the project you must have previously installed [Node.js](https://nodejs.org/en/) and its package manager [NPM](https://nodejs.org/en/) and [clone this repository](https://www.atlassian.com/br/git/tutorials/setting-up-a-repository/git-clone). To ensure the best development experience it is recommended to install the Eslint and Prettier plugins in your editor.
 
-Apos ter realizado estes procedimentos execute o comando a seguir na pasta que foi criada pela clonagem do repositorio `/test-jungle-devs` para instalar as dependencias do projeto.
+After you have done these procedures run the following command in the folder that was created by cloning the `/test-jungle-devs` repository to install the project dependencies.
 
 ### `npm install`
 
-## Como executar o projeto <a name="exec"/> [^](#exec)
+## How to run the project <a name="exec"/> [^](#exec)
 
-Para iniciar o projeto em modo de desenvolvimento na porta 3000 ([http://localhost:3000](http://localhost:3000)), vá ate a pasta do projeto `/test-jungle-devs` e execute:
+To start the project in development mode on port 3000 ([http://localhost:3000](http://localhost:3000)), go to the project folder `/test-jungle-devs` and run:
 
 ### `npm start`
 
-pressione `Ctrl + c` para encerrar a execução do projeto.
+press `Ctrl + c` to quit the project.
 
-Para iniciar os testes de unidade, na pasta do projeto `/test-jungle-devs` execute:
+To start the unit tests, in the project folder `/test-jungle-devs` run:
 
 ### `npm test`
 
-pressione `q` para encerrar o executor de testes.
+press `q` to quit the test runner.
 
-## Como criar uma versão de produção <a name="build"/> [^](#build)
+## How to create a production version <a name="build"/> [^](#build)
 
-Para criar uma versão de produção para vá ate a pasta do projeto `/test-jungle-devs` e execute:
+To create a production version for go to the `/test-jungle-devs` project folder and run:
 
 ### `npm build`
 
-Este comando vai criar um nova pasta `/build`, esta pasta contem todo o codigo minificado e transpilado para versões mais antigas do javascript como forma de garantir o funcionamento em navegadores mais antigos. Use esta pasta como conteudo nos seus deploys.
+This command will create a new `/build` folder, this folder contains all the code minified and transposed to older versions of javascript to ensure it works in older browsers. Use this folder as content in your deploys.
 
-## Teste A/B <a name="a/b"/> [^](#a/b)
+## A/B Test <a name="a/b"/> [^](#a/b)
 
-Este projeto realiza um experimento onde 50% do publico recebe uma mensagem diferente no componente Hero,
-os resultados do teste podem vistos [aqui](https://app.optimizely.com/l/nRjsaTIcRgeWj4ePDxzNLg)
+This project performs an experiment where 50% of the audience receives a different message in the Hero component,
+the results of the test can be seen [here](https://app.optimizely.com/l/nRjsaTIcRgeWj4ePDxzNLg)
 
 <p align="center">
     <p> variant 1:</p>
-    <img src="./src/assets/readme/heroVariant1.png" width="600" height="300" alt="todo-list-usage"/>
+    <img src="./src/assets/readme/heroVariant1.png" width="600" height="300" alt="all-list-usage"/>
 </p>
 <p align="center">
     <p> variant 2:</p>
     <img src="./src/assets/readme/heroVariant2.png" width="600" height="300" alt="todo-list-usage"/>
 </p>
 
-## Melhorias <a name="melhorias"/> [^](#list)
+## Enhancements <a name="enhancements"/> [^](#list)
 
--   implementação de testes de integração nas funções criticas ao usuario
-    -   Renderização correta da tela
-    -   funcionamento do formualrio
--   Foi adicionada a biblioteca toastify para melhorar o feedback das API's.
+-   Implementation of integration tests on user-critical functions
+    -   Correct screen rendering
+    -   formualrio working
+-   Added toastify library to improve API feedback.
+
+Translated with www.DeepL.com/Translator (free version)
