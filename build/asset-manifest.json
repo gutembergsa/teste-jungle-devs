@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/teste-jungle-devs/static/css/main.1c54dc14.chunk.css",
+    "main.js": "/teste-jungle-devs/static/js/main.efa8a5be.chunk.js",
+    "main.js.map": "/teste-jungle-devs/static/js/main.efa8a5be.chunk.js.map",
+    "runtime-main.js": "/teste-jungle-devs/static/js/runtime-main.555d931a.js",
+    "runtime-main.js.map": "/teste-jungle-devs/static/js/runtime-main.555d931a.js.map",
+    "static/css/2.68b64559.chunk.css": "/teste-jungle-devs/static/css/2.68b64559.chunk.css",
+    "static/js/2.ad90ef74.chunk.js": "/teste-jungle-devs/static/js/2.ad90ef74.chunk.js",
+    "static/js/2.ad90ef74.chunk.js.map": "/teste-jungle-devs/static/js/2.ad90ef74.chunk.js.map",
+    "index.html": "/teste-jungle-devs/index.html",
+    "static/css/2.68b64559.chunk.css.map": "/teste-jungle-devs/static/css/2.68b64559.chunk.css.map",
+    "static/css/main.1c54dc14.chunk.css.map": "/teste-jungle-devs/static/css/main.1c54dc14.chunk.css.map",
+    "static/js/2.ad90ef74.chunk.js.LICENSE.txt": "/teste-jungle-devs/static/js/2.ad90ef74.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/teste-jungle-devs/static/media/Inter.da1f78c3.woff",
+    "static/media/heroAppSampleImage.f3f0f667.png": "/teste-jungle-devs/static/media/heroAppSampleImage.f3f0f667.png",
+    "static/media/Hero.module.scss": "/teste-jungle-devs/static/media/heroBackground.8e0f6d21.png",
+    "static/media/iconCalendar.aa43e26a.svg": "/teste-jungle-devs/static/media/iconCalendar.aa43e26a.svg",
+    "static/media/iconFacebook.52d5df86.svg": "/teste-jungle-devs/static/media/iconFacebook.52d5df86.svg",
+    "static/media/iconInstagram.75afcdcd.svg": "/teste-jungle-devs/static/media/iconInstagram.75afcdcd.svg",
+    "static/media/iconPlay.4bdeaa2f.svg": "/teste-jungle-devs/static/media/iconPlay.4bdeaa2f.svg",
+    "static/media/iconSmile.26787b83.svg": "/teste-jungle-devs/static/media/iconSmile.26787b83.svg",
+    "static/media/iconTwitter.eb814650.svg": "/teste-jungle-devs/static/media/iconTwitter.eb814650.svg",
+    "static/media/imageSection1.67062477.png": "/teste-jungle-devs/static/media/imageSection1.67062477.png",
+    "static/media/imageSection2.ff3f6a58.png": "/teste-jungle-devs/static/media/imageSection2.ff3f6a58.png",
+    "static/media/imageSection3.0e9e4452.png": "/teste-jungle-devs/static/media/imageSection3.0e9e4452.png",
+    "static/media/logo.f5bd6642.svg": "/teste-jungle-devs/static/media/logo.f5bd6642.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.555d931a.js",
+    "static/css/2.68b64559.chunk.css",
+    "static/js/2.ad90ef74.chunk.js",
+    "static/css/main.1c54dc14.chunk.css",
+    "static/js/main.efa8a5be.chunk.js"
+  ]
+}
