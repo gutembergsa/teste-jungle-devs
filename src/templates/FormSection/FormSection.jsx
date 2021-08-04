@@ -38,7 +38,7 @@ const FormSection = () => {
 						</p>
 					</div>
 					<div className={styles.right}>
-						<img src={image1} alt="Section 1 image" />
+						<img src={image1} width={584} height={392} alt="Section 1 image" />
 					</div>
 				</div>
 				<div className={styles.formSection}>
@@ -68,7 +68,7 @@ const FormSection = () => {
 						</p>
 					</div>
 					<div className={styles.right}>
-						<img src={image2} alt="Section 2 image" />
+						<img src={image2} width={456} height={336} alt="Section 2 image" />
 					</div>
 				</div>
 				<div className={styles.thirdSection}>
@@ -85,12 +85,12 @@ const FormSection = () => {
 						</a>
 					</p>
 					<div className={styles.image}>
-						<img src={image3} alt="Section 3 image" />
+						<img src={image3} width={984} height={392} alt="Section 3 image" />
 					</div>
 				</div>
 				<div className={styles.fourthSection}>
 					<div className={styles.image}>
-						<img src={image4} alt="Section 4 image" />
+						<img src={image4} width={216} height={92} alt="Section 4 image" />
 					</div>
 					<p className={styles.title}>Coming soon: Nanny Share Daily Diary!</p>
 					<p className={styles.content}>

@@ -45,14 +45,14 @@ const NewsLetterForm = () => {
 							required: { value: true, message: 'Name is required' },
 							minLenght: { value: 3, message: 'At least 3 letters' },
 						}}
+						useCustomPlaceholder={
+							<span className={styles.customPlaceholder}>
+								Your
+								<br />
+								name
+							</span>
+						}
 					/>
-					{watchNameInput ? null : (
-						<span className={styles.customPlaceholder}>
-							Your
-							<br />
-							name
-						</span>
-					)}
 				</div>
 				<NewsLetterInput
 					testid="email"
@@ -70,7 +70,7 @@ const NewsLetterForm = () => {
 						},
 					}}
 				/>
-				<Button data-testid="button" type="submit">
+				<Button aria-label="Send" data-testid="button" type="submit">
 					{formIsLoading ? <SpinnerLoader /> : 'Send'}
 				</Button>
 			</form>

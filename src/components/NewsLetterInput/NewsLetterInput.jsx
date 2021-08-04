@@ -17,6 +17,7 @@ const NewsLetterInput = ({ ...rest }) => {
 		autoComplete,
 		placeholder,
 		rules,
+		useCustomPlaceholder,
 	} = rest
 
 	const { field, fieldState } = useController({
@@ -25,7 +26,7 @@ const NewsLetterInput = ({ ...rest }) => {
 		rules,
 		defaultValue: defaultValue,
 	})
-	const { onChange } = field
+	const { onChange, value } = field
 	const { invalid, error } = fieldState
 
 	return (
@@ -40,7 +41,10 @@ const NewsLetterInput = ({ ...rest }) => {
 				className={styles.userArea}
 				onChange={onChange}
 			/>
-			{invalid && error?.message && <span className={styles.error}>{error?.message}</span>}{' '}
+			{!value?.length && useCustomPlaceholder ? useCustomPlaceholder : null}
+			{invalid && error?.message && (
+				<span className={styles.error}>{error?.message}</span>
+			)}{' '}
 		</label>
 	)
 }

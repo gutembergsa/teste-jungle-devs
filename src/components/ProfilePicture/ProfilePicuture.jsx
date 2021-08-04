@@ -4,7 +4,14 @@ import styles from './ProfilePicuture.module.scss'
 
 const ProfilePicuture = ({ image, ...rest }) => {
 	const jsx = image ? (
-		<img className={styles.image} src={image} alt="Imagem de perfil" {...rest} />
+		<img
+			className={styles.image}
+			width={56}
+			height={56}
+			src={image}
+			alt="Imagem de perfil"
+			{...rest}
+		/>
 	) : (
 		<span className={styles.imageFallback} />
 	)

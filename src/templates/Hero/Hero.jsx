@@ -41,7 +41,7 @@ const Hero = () => {
 							}}
 						</OptimizelyFeature>
 						<p className={styles.play}>
-							<Button className={styles.heroButton}>
+							<Button aria-label="Play video" className={styles.heroButton}>
 								{' '}
 								<PlayIcon />{' '}
 							</Button>
@@ -51,7 +51,13 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className={`${styles.heroBlock} ${styles.right}`}>
-						<img className={styles.image} src={image} alt="App Sample Image" />
+						<img
+							className={styles.image}
+							width={316}
+							height={290}
+							src={image}
+							alt="App Sample Image"
+						/>
 					</div>
 				</div>
 			</div>

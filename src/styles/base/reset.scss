@@ -25,3 +25,6 @@ li {
 button {
 	cursor: pointer;
 }
+img {
+	aspect-ratio: attr(width) / attr(height);
+}

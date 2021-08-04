@@ -1,6 +1,6 @@
 @import '../../styles/styles.scss';
 
-.viewerSection {
+.viewerAside {
 	@include FlexCenterLayout();
 	align-items: center;
 	height: 112px;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 990px) {
-	.viewerSection {
+	.viewerAside {
 		padding: 32px 0;
 		height: auto;
 		flex-direction: column;

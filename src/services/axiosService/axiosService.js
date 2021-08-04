@@ -5,6 +5,7 @@ const axiosService = axios.create({
 	baseURL: process.env.REACT_APP_BASE_API_URL,
 	crossDomain: true,
 	timeout: 30000,
+	headers: { 'Cache-Control': '31536000' },
 })
 
 export default axiosService

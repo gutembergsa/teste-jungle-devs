@@ -13,7 +13,7 @@ import { ReactComponent as HapuSmile } from '../../assets/icons/iconSmile.svg'
 const Header = () => {
 	return (
 		<header>
-			<Button className={styles.headerSmileButton}>
+			<Button aria-label="Hapu smile logo :)" className={styles.headerSmileButton}>
 				<HapuSmile />
 			</Button>
 			<nav className={styles.navbar}>

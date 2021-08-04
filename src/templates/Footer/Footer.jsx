@@ -36,7 +36,7 @@ const Footer = () => {
 				</p>
 				<div className={styles.footerNav}>
 					<div className={styles.logoBlock}>
-						<img src={logo} alt="Footer Hapu logo" />
+						<img src={logo} width={64} height={24} alt="Footer Hapu logo" />
 					</div>
 					<div className={styles.interNavBlock}>
 						<nav className={styles.footerNav}>
@@ -61,21 +61,30 @@ const Footer = () => {
 							<ul className={styles.footerNavList}>
 								<li>
 									<a href="#">
-										<Button className={styles.externalLinkButton}>
+										<Button
+											aria-label="Facebook link"
+											className={styles.externalLinkButton}
+										>
 											<FacebookIcon />
 										</Button>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<Button className={styles.externalLinkButton}>
+										<Button
+											aria-label="Twitter link"
+											className={styles.externalLinkButton}
+										>
 											<TwitterIcon />
 										</Button>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<Button className={styles.externalLinkButton}>
+										<Button
+											aria-label="Instagram link"
+											className={styles.externalLinkButton}
+										>
 											<InstaIcon />
 										</Button>
 									</a>
