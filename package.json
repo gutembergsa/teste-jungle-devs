@@ -1,4 +1,5 @@
 {
+	"homepage": "https://gutembergsa.github.io/teste-jungle-devs/",
 	"name": "teste-jungle-dev",
 	"version": "0.1.0",
 	"private": true,
@@ -21,8 +22,9 @@
 		"redux-persist": "^6.0.0"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
-		"start-prod": "react-scripts start --mode=production",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"test-no-watch": "react-scripts test --all --detectOpenHandles --watchAll=false",
@@ -50,6 +52,7 @@
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
+		"gh-pages": "^3.2.3",
 		"prettier": "^2.3.2"
 	}
 }
