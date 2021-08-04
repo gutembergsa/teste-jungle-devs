@@ -14,7 +14,7 @@
 }
 .error {
 	@include ErrorMessageLayout();
-	font-size: 1.4rem;
+	font-size: var(--font-size);
 	top: 50px;
 	left: 20px;
 }
