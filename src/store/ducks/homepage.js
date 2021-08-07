@@ -12,7 +12,7 @@ const actions = {
 		state.formIsLoading = action.payload
 	},
 	defineUser: (state) => {
-		if (!state?.user?.lenght || !localStorage.getItem('persist:root')) {
+		if (!state?.user?.length || !localStorage.getItem('persist:root')) {
 			state.user = `user-${Date.now()}`
 		}
 	},
